@@ -1,0 +1,20 @@
+/* цвет основного текста #000000 */
+/* вторичный цвет текста rgba(0, 0, 0, 0.8) */
+/* белый #FFFFFF */
+/* акцент #18A0FB */
+/* вториынй цвет фона #F5F5F5 */
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #000000;
+  --accent-color: #18a0fb;
+}
+.page-header {
+}
+.link {
+}
+.navigation {
+}
+.list {
+}
+.item {
+}
