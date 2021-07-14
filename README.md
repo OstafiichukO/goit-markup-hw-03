@@ -1,2 +1,2 @@
 # goit-markup-hw-02
- Home wOrk 2 CSS
+ Home work 2 CSS
