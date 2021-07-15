@@ -20,11 +20,18 @@ font-family: 'Roboto', sans-serif;
 }
 body {
   color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
 }
 /* Site nav */
+.navigation {
+  letter-spacing: 0.02em;
+}
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  text-decoration-line: none;
   color: #000000;
 }
 .logo .web {
@@ -34,6 +41,10 @@ body {
   color: var(--secondary-text-color);
 }
 /* Page header */
+.page-header {
+  font-weight: 500;
+  font-size: 14px;
+}
 .link:visited {
   color: #000000;
 }
@@ -54,26 +65,46 @@ body {
 .studio {
   color: var(--title-text-color);
 }
+.location,
+.auth-nav {
+  font-style: normal;
+}
 /* Общие стили конец */
 
+/* Header */
+.link,
+.contacts-link {
+  text-decoration: none;
+}
 /* Hero */
 .hero {
   background-color: var(--accent-bgc);
 }
 .hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  text-align: center;
   color: var(--title-text-color);
 }
 /* Buttons */
 .btn {
   background-color: var(--secondary-bgc);
   color: var(--primary-text-color);
+  cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
   background-color: var(--accent-color);
   color: var(--title-text-color);
 }
+.btn.primary {
+  font-weight: 700;
+  font-size: 16px;
+}
 /* Section */
+.section {
+  font-size: 14px;
+}
 .title {
   color: var(--primary-text-color);
 }
@@ -83,7 +114,18 @@ body {
 .list {
   list-style: none;
 }
+/* Features */
+.features .title,
+.features .text {
+  font-size: 14px;
+}
+/* Work */
+.work.title {
+  font-size: 36px;
+  text-align: center;
+}
 /* Section team */
 .team {
   background-color: var(--secondary-bgc);
 }
+/* Footer */
