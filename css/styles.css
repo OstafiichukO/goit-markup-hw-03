@@ -1,56 +1,67 @@
-/* цвет основного текста #212121 */
-/* вторичный цвет текста rgba(117, 117, 117, 1); */
-/* белый фон #FFFFFF */
-/* вториынй цвет фона #2f303a */
-/* акцент #18A0FB */
+/* основной цвет текста #212121 */
+/* вторичный цвет текста #757575 */
+/* акцент текста #2196F3 */
+/* основной цвет фона #ffffff */
+/* вторичынй цвет фона #2f303a */
+/* акцент фона  #2f303a*/
 
 /* шрифты
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+/* цвета */
 :root {
-  --title-text-color: #212121;
-  --primary-text-color: rgba(117, 117, 117, 1);
-  --primary-bgc: #ffffff;
-  --accent-bgc: #2f303a;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --primary-bgc: #ffffff;
+  --secondary-bgc: #f5f4fa;
+  --accent-bgc: #2f303a;
 }
-/* top line bg */
-.body {
-  font-family: "Roboto", sans-serif;
+/* заданые базовые стили страницы */
+body {
   background-color: var(--primary-bgc);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
 }
-/* Header position */
-.page-header,
-.site-nav,
-.auth-nav {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-}
-/* WebStudio */
+/* Site nav */
 .logo {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
-  /* identical to box height */
-  letter-spacing: 0.03em;
+  color: #000000;
 }
-.web {
+.logo .web {
   color: #2196f3;
 }
-/* Site Nav */
-.navigation {
-  position: absolute;
-  width: 294px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
+.contacts-link {
+  color: #757575;
+}
+/* настройки курсора*/
+.link:visited {
+  color: #000000;
+}
+.link:hover,
+.link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #2196f3;
+}
+/* Hero */
+.hero {
+  background-color: var(--accent-bgc);
+}
+.hero-title {
+  color: #ffffff;
+}
+.order-button {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+/* Section */
+.section-title {
+  color: var(--primary-text-color);
+}
+.section-text {
+  color: var(--secondary-text-color);
+}
+.list {
+  list-style: none;
 }
