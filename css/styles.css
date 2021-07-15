@@ -1,46 +1,56 @@
-/* цвет основного текста #000000 */
-/* вторичный цвет текста rgba(0, 0, 0, 0.8) */
-/* белый #FFFFFF */
+/* цвет основного текста #212121 */
+/* вторичный цвет текста rgba(117, 117, 117, 1); */
+/* белый фон #FFFFFF */
+/* вториынй цвет фона #2f303a */
 /* акцент #18A0FB */
-/* вториынй цвет фона #F5F5F5 */
+
+/* шрифты
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
 :root {
-  --primary-text-color: rgba(0, 0, 0, 0.8);
-  --title-text-color: #000000;
-  --accent-color: #18a0fb;
+  --title-text-color: #212121;
+  --primary-text-color: rgba(117, 117, 117, 1);
+  --primary-bgc: #ffffff;
+  --accent-bgc: #2f303a;
+  --accent-color: #2196f3;
 }
-.page-header {
+/* top line bg */
+.body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--primary-bgc);
 }
-.link {
+/* Header position */
+.page-header,
+.site-nav,
+.auth-nav {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
 }
+/* WebStudio */
+.logo {
+  position: absolute;
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+}
+.web {
+  color: #2196f3;
+}
+/* Site Nav */
 .navigation {
-}
-.adv-list {
-}
-.adv-title {
-}
-.adv-text {
-}
-.doing-title {
-}
-.doing-list {
-}
-.team-title {
-}
-.photo {
-}
-.team-name {
-}
-.team-skills {
-}
-.list {
-}
-.item {
-}
-.portfolio-btn {
-}
-.pict {
-}
-.item-title {
-}
-.item-text {
+  position: absolute;
+  width: 294px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
 }
