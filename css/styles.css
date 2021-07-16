@@ -1,12 +1,15 @@
-/* цвета */
-/* основной цвет текста #212121 */
-/* вторичный цвет текста #757575 */
-/* цвет заголовка #ffffff */
-/* акцент текста #2196F3 */
-/* вторичынй цвет фона #2f303a */
-/* акцент фона #2f303a*/
-/* контакты футера rgba(255, 255, 255, 0.6) */
-/* шрифты
+/*
+цвета
+основной цвет текста #212121
+вторичный цвет текста #757575
+цвет заголовка #ffffff
+акцент текста #2196F3
+вторичынй цвет фона #f5f4fa
+акцент фона #2f303a
+контакты футера rgba(255, 255, 255, 0.6)
+*/
+/*
+шрифты
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
@@ -32,7 +35,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  text-decoration-line: none;
+  text-decoration: none;
   color: #000000;
 }
 .logo .web {
@@ -51,15 +54,6 @@ body {
 .contacts-link {
   color: var(--secondary-text-color);
 }
-.link:visited {
-  color: #000000;
-}
-.link:hover,
-.link:focus,
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--accent-color);
-}
 .site-nav .link.current {
   color: var(--accent-color);
 }
@@ -70,11 +64,6 @@ body {
   background-color: var(--secondary-bgc);
   color: var(--primary-text-color);
   cursor: pointer;
-}
-.btn:hover,
-.btn:focus {
-  background-color: var(--accent-color);
-  color: var(--title-text-color);
 }
 /* Footer */
 .footer {
@@ -93,6 +82,18 @@ body {
 }
 .footer .contacts-link {
   color: var(--footer-contacts-color);
+}
+/* Hover, focus effects */
+.link:hover,
+.link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
+  color: var(--title-text-color);
 }
 /* List */
 .list {
@@ -114,7 +115,7 @@ body {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
-/* Buttons WebStudio */
+/* Button WebStudio */
 .btn.primary {
   font-weight: 700;
   font-size: 16px;
