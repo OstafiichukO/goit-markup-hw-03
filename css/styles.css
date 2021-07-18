@@ -41,7 +41,7 @@ body {
 .logo .web {
   color: var(--accent-color);
 }
-.site-nav {
+.page-header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -54,7 +54,7 @@ body {
 .contacts-link {
   color: var(--secondary-text-color);
 }
-.site-nav .link.current {
+.current {
   color: var(--accent-color);
 }
 /* Buttons */
@@ -89,6 +89,10 @@ body {
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
+}
+.link:active
+.link:visited {
+  color: var(--primary-text-color)
 }
 .btn:hover,
 .btn:focus {
