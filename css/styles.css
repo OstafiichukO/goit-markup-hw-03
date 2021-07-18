@@ -93,8 +93,8 @@ body {
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.03em;
-  background-color: var(--secondary-bgc);
-  color: var(--primary-text-color);
+  color: var(--title-text-color);
+  background-color: var(--accent-color);
   cursor: pointer;
 }
 .btn:hover,
@@ -179,8 +179,8 @@ body {
   background-color: var(--accent-bgc);
   color: var(--title-text-color);
 }
-.studio {
-  color: var(--title-text-color);
+.footer .logo {
+  color: #ffffff;
 }
 .footer .contacts {
   color: var(--footer-contacts-color);
