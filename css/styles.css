@@ -13,7 +13,6 @@
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
-/* Общие стили начало */
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -26,9 +25,18 @@ font-family: 'Roboto', sans-serif;
 body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
+  font-style: 400;
+}
+.list {
+  list-style: none;
 }
 /* Page header */
-/* Site nav */
+.page-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -38,75 +46,63 @@ body {
   text-decoration: none;
   color: #000000;
 }
-.logo .web {
+.web {
   color: var(--accent-color);
 }
-.page-header {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.link,
-.contacts-link {
-  text-decoration: none;
-}
-.contacts-link {
-  color: var(--secondary-text-color);
-}
-.current {
-  color: var(--accent-color);
-}
-/* Buttons */
-.btn {
-  font-family: inherit;
-  font-size: 16px;
-  background-color: var(--secondary-bgc);
-  color: var(--primary-text-color);
-  cursor: pointer;
-}
-/* Footer */
-.footer {
-  background-color: var(--accent-bgc);
-  color: var(--title-text-color);
-}
-.studio {
-  color: var(--title-text-color);
-}
-.location,
-.auth-nav {
+.auth-nav,
+.location {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.footer .contacts-link {
-  color: var(--footer-contacts-color);
+.link {
+  color: var(--primary-text-color);
+  text-decoration: none;
 }
-/* Hover, focus effects */
-.link:hover,
-.link:focus,
-.contacts-link:hover,
-.contacts-link:focus {
+.current {
   color: var(--accent-color);
 }
-.link:active
-.link:visited {
-  color: var(--primary-text-color)
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+.contacts {
+  color: var(--secondary-text-color);
+  text-decoration: none;
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
+}
+/* Buttons */
+.primary {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.secondary {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  background-color: var(--secondary-bgc);
+  color: var(--primary-text-color);
+  cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
   background-color: var(--accent-color);
   color: var(--title-text-color);
 }
-/* List */
-.list {
-  list-style: none;
-}
-/* Общие стили конец */
-
-/* WebStudio */
-/* Hero */
+/*WebStudio Hero */
 .hero {
   letter-spacing: 0.06em;
   background-color: var(--accent-bgc);
@@ -119,14 +115,7 @@ body {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
-/* Button WebStudio */
-.btn.primary {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-}
-/* Features */
+/*WebStudio Features */
 .features .title {
   font-weight: 700;
   font-size: 14px;
@@ -141,29 +130,28 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-/* Work */
-.work.title,
-.team.title {
+/*WebStudio Work, Team*/
+.work,
+.team {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
-/* Team */
-.section.team {
+.teammates {
   background-color: var(--secondary-bgc);
 }
-.team-list > li {
+.list-item {
   background-color: #ffffff;
 }
-.team-list .title {
+.name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-list .text {
+.position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -171,25 +159,29 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-/* Portfolio */
-/* Buttons Portfolio*/
-.btn.secondary {
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0.03em;
-}
-/* Work examples */
-.section-title {
+/*Portfolio Work examples */
+.project-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
 }
-.section-text {
+.project-type {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+/* Footer */
+.footer {
+  background-color: var(--accent-bgc);
+  color: var(--title-text-color);
+}
+.studio {
+  color: var(--title-text-color);
+}
+.footer .contacts {
+  color: var(--footer-contacts-color);
 }
