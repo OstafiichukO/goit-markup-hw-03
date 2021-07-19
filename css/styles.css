@@ -25,7 +25,6 @@ font-family: 'Roboto', sans-serif;
 body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  font-style: 400;
 }
 .list {
   list-style: none;
@@ -87,15 +86,22 @@ body {
   background-color: var(--accent-color);
   cursor: pointer;
 }
+.secondary-permanent,
 .secondary {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  background-color: var(--accent-color);
   cursor: pointer;
+}
+.secondary-permanent {
+  background-color: var(--accent-color);
+  color: var(--title-text-color);
+}
+.secondary {
+  color: var(--primary-text-color);
+  background-color: var(--secondary-bgc);
 }
 .btn:hover,
 .btn:focus {
@@ -116,7 +122,7 @@ body {
   color: var(--title-text-color);
 }
 /*WebStudio Features */
-.features .title {
+.features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -124,7 +130,7 @@ body {
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
-.features .text {
+.features-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -179,9 +185,20 @@ body {
   background-color: var(--accent-bgc);
   color: var(--title-text-color);
 }
-.footer .logo {
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
   color: #ffffff;
 }
-.footer .contacts {
+.footer-contacts {
+  text-decoration: none;
   color: var(--footer-contacts-color);
+}
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--accent-color);
 }
