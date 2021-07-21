@@ -26,6 +26,18 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .list {
   list-style: none;
   padding: 0px;
@@ -87,6 +99,7 @@ body {
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 10px 32px;
+  margin-bottom: 200px;
   color: var(--title-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -122,12 +135,13 @@ body {
 .hero {
   letter-spacing: 0.06em;
   text-align: center;
+  margin-bottom: 94px;
   background-color: var(--accent-bgc);
 }
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
-  padding-top: 0px;
+  padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -135,21 +149,35 @@ body {
   color: var(--title-text-color);
 }
 /*WebStudio Features */
+.features {
+  margin-bottom: 94px;
+}
 .features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 10px;
   color: var(--primary-text-color);
 }
 .features-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: var(--secondary-text-color);
 }
 /*WebStudio Work, Team*/
+.work-section {
+  margin-bottom: 94px;
+}
+.work {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
 .work,
 .team {
   font-size: 36px;
@@ -157,11 +185,23 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.team {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.team-list {
+  padding-bottom: 94px;
+}
 .teammates {
   background-color: var(--secondary-bgc);
 }
 .list-item {
   background-color: #ffffff;
+}
+.photo {
+  margin-bottom: 30px;
 }
 .name {
   font-weight: 500;
@@ -169,6 +209,8 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 .position {
   font-weight: 400;
@@ -176,6 +218,9 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
   color: var(--secondary-text-color);
 }
 /*Portfolio Work examples */
@@ -199,15 +244,27 @@ body {
   color: var(--title-text-color);
 }
 .footer-logo {
+  display: inline-block;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-top: 60px;
+  margin-bottom: 20px;
   text-decoration: none;
   color: #ffffff;
 }
+.address {
+  padding-bottom: 60px;
+}
+.location {
+  margin-top: 0px;
+  margin-bottom: 9px;
+}
 .footer-contacts {
+  display: inline-block;
+  margin-bottom: 9px;
   text-decoration: none;
   color: var(--footer-contacts-color);
 }
