@@ -26,6 +26,17 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 }
+h1, h2, h3, h4, h5, h6, p {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
 .container {
  width: 1200px;
  margin-left: auto;
@@ -44,11 +55,6 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.list {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
 }
 /* Page header */
 .page-header {
@@ -337,8 +343,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-.location {
+/* .location {
   margin-top: 0px;
+} */
+.address .auth-item:nth-child(-n + 2) {
+  padding-bottom: 5px;
 }
 .footer-contacts {
   display: inline-block;
