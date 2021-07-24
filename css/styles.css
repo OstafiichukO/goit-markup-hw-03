@@ -122,6 +122,10 @@ ul {
 .contacts:focus {
   color: var(--accent-color);
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* Buttons */
 .item:not(:last-child) {
   margin-right: 8px;
@@ -129,14 +133,13 @@ ul {
 .buttons {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 .primary {
+  padding: 10px 32px;
+  margin-bottom: 106px;
   border: 1px solid transparent;
   border-radius: 4px;
-  padding: 10px 32px;
-  margin-bottom: 200px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -177,13 +180,12 @@ ul {
 .hero {
   letter-spacing: 0.06em;
   text-align: center;
-  margin-bottom: 94px;
   background-color: var(--accent-bgc);
 }
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
-  padding-top: 200px;
+  padding-top: 106px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -192,13 +194,15 @@ ul {
 }
 /*WebStudio Features */
 .features {
-  display: flex;
-  margin-bottom: 94px;
+  padding-bottom: 0;
 }
-.features li {
+.features-list {
+  display: flex;
+}
+.features-list li {
   width: 270px;
 }
-.features li:not(:last-child) {
+.features-list li:not(:last-child) {
   margin-right: 30px;
 }
 .features-title {
@@ -243,14 +247,11 @@ ul {
   margin-right: 30px;
 }
 .team {
-  padding-top: 94px;
-  padding-bottom: 50px;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 .team-list {
   display: flex;
-  padding-bottom: 94px;
 }
 .list-item:not(:last-child) {
   margin-right: 30px;
@@ -290,14 +291,18 @@ ul {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 .projects li {
+  border: #eee 1px solid;
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 .projects li:nth-child(3n) {
   margin-right: 0;
+}
+.projects li:nth-child(n + 7) {
+  margin-bottom: 0;
 }
 .project-title {
   margin: 20px 24px;
