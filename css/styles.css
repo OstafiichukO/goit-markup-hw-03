@@ -37,6 +37,11 @@ ul {
   padding: 0px;
   margin: 0px;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  }
 .container {
  width: 1200px;
  margin-left: auto;
@@ -69,8 +74,8 @@ ul {
   align-items: center;
 }
 .logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -84,7 +89,7 @@ ul {
 }
 .site-nav {
   display: flex;
-  margin-left: 93px;
+  padding-left: 93px;
 }
 .nav-item + .nav-item {
   margin-left: 40px;
@@ -94,7 +99,7 @@ ul {
   margin-left: auto;
 }
 .main-nav .auth-item + .auth-item {
-  margin-left: 50px;
+  padding-left: 50px;
 }
 .auth-nav,
 .location {
@@ -137,7 +142,6 @@ ul {
 }
 .primary {
   padding: 10px 32px;
-  margin-bottom: 106px;
   border: 1px solid transparent;
   border-radius: 4px;
   font-family: inherit;
@@ -177,6 +181,10 @@ ul {
   color: var(--title-text-color);
 }
 /*WebStudio Hero */
+.hero.section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero {
   letter-spacing: 0.06em;
   text-align: center;
@@ -185,7 +193,6 @@ ul {
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
-  padding-top: 106px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -193,9 +200,6 @@ ul {
   color: var(--title-text-color);
 }
 /*WebStudio Features */
-.features {
-  padding-bottom: 0;
-}
 .features-list {
   display: flex;
 }
@@ -224,8 +228,8 @@ ul {
   color: var(--secondary-text-color);
 }
 /*WebStudio Work, Team*/
-.work-section {
-  margin-bottom: 94px;
+.works.section {
+  padding-top: 0px;
 }
 .work,
 .team {
@@ -246,6 +250,9 @@ ul {
 .img-list li:not(:last-child) {
   margin-right: 30px;
 }
+.teammates {
+  background-color: var(--secondary-bgc);
+}
 .team {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -253,19 +260,20 @@ ul {
 .team-list {
   display: flex;
 }
+.list-item {
+  width: 270px;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 2px #eee;
+  background-color: #ffffff;
+}
 .list-item:not(:last-child) {
   margin-right: 30px;
 }
-.teammates {
-  background-color: var(--secondary-bgc);
-}
-
-.list-item {
-  width: 270px;
-  background-color: #ffffff;
-}
-.photo {
-  margin-bottom: 30px;
+.img-description {
+  padding: 20px 24px;
 }
 .name {
   font-weight: 500;
@@ -273,8 +281,10 @@ ul {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .position {
   font-weight: 400;
@@ -282,9 +292,8 @@ ul {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 30px;
+  margin-bottom: 0;
+  padding-bottom: 10px;
   color: var(--secondary-text-color);
 }
 /*Portfolio Work examples */
@@ -293,10 +302,10 @@ ul {
   flex-wrap: wrap;
 }
 .projects li {
-  border: #eee 1px solid;
-  width: calc((100% - 60px) / 3);
+  flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
+    /* width: calc((100% - 60px) / 3); */
 }
 .projects li:nth-child(3n) {
   margin-right: 0;
@@ -304,13 +313,17 @@ ul {
 .projects li:nth-child(n + 7) {
   margin-bottom: 0;
 }
-.project-title {
-  margin: 20px 24px;
+.projects .img-description {
+  border-left: #eee 1px solid;
+  border-bottom: #eee 1px solid;
+  border-right: #eee 1px solid;
 }
 .project-title h2,p {
   margin: 0;
 }
 .project-name {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -318,6 +331,8 @@ ul {
   color: var(--primary-text-color);
 }
 .project-type {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -329,6 +344,9 @@ ul {
   background-color: var(--accent-bgc);
   color: var(--title-text-color);
 }
+.footer-section {
+  padding: 60px 0;
+}
 .footer-logo {
   display: inline-block;
   font-family: Raleway, sans-serif;
@@ -336,21 +354,14 @@ ul {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  margin-top: 60px;
   margin-bottom: 20px;
   text-decoration: none;
   color: #ffffff;
-}
-.address {
-  padding-bottom: 60px;
 }
 .address .auth-nav {
   display: flex;
   flex-direction: column;
 }
-/* .location {
-  margin-top: 0px;
-} */
 .address .auth-item:nth-child(-n + 2) {
   padding-bottom: 5px;
 }
