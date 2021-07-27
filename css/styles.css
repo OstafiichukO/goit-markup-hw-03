@@ -263,7 +263,7 @@ img {
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
   border-radius: 0 0 4px 4px;
-  box-shadow: 2px #eee;
+  box-shadow: 1px 2px #eee, -1px 2px #eee;
   background-color: #ffffff;
 }
 .list-item:not(:last-child) {
